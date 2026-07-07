@@ -58,6 +58,14 @@ while True:
             print("Age: ",storedStudent_age)
             print("CGPA: ",storedStudent_cgpa)
 
+    elif choice == "4":
+        search = input ("Enter ID: ")
+        if search == storedStudent_id:
+            print("Name: ",storedStudent_name)
+            print("ID: ",storedStudent_id)
+            print("Age: ",storedStudent_age)
+            print("CGPA: ",storedStudent_cgpa)
+
     elif choice == "5":
         search = input("Enter ID: ")
         if search == storedStudent_id :
