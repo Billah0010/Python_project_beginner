@@ -33,6 +33,18 @@ while True:
         print()
         print("Student Added successfully!!!")
 
+    if choice == "2":
+        search = input("Enter ID: ")
+        
+        if search == storedStudent_id:
+            storedStudent_name=""
+            storedStudent_id=""
+            storedStudent_age=""
+            storedStudent_cgpa=""
+            print("Delete Successfull!!!!")
+        else:
+            print("No Student Found!!")    
+
 
     elif choice == "3":
         if storedStudent_id == "":
