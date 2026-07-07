@@ -14,9 +14,10 @@ while True:
     print()
     print("1. Add Student")
     print("2. Delete Student")
-    print("3. Show Student List")
+    print("3. Show Student Information")
     print("4. Search Student")
-    print("5. Exit")
+    print("5. Update Student information")
+    print("6. Exit")
 
     choice=input("Enter your choice: ")
 
@@ -30,8 +31,38 @@ while True:
         storedStudent_age = age
         storedStudent_cgpa = cgpa
         print()
-        print("Student Added successfully!!!".center(80))
-    if choice == "5":
+        print("Student Added successfully!!!")
+
+
+    elif choice == "3":
+        if storedStudent_id == "":
+            print("No Student Found!!!!!!!")
+        else:    
+            print("="*80)
+            print("Student Information".center(80))
+            print()
+            print("Name: ",storedStudent_name)
+            print("ID: ",storedStudent_id)
+            print("Age: ",storedStudent_age)
+            print("CGPA: ",storedStudent_cgpa)
+
+    elif choice == "5":
+        search = input("Enter ID: ")
+        if search == storedStudent_id :
+            storedStudent_name = input("Enter New Name: ")
+            storedStudent_id = input("Enter New ID: ")
+            storedStudent_age = input("Enter New Age: ")
+            storedStudent_cgpa = input("Enter New cgpa: ")
+
+            print()
+            print("Inforation Update Successfull!!!!")
+
+        else:
+            print("No Student Found")    
+
+
+    elif choice == "6":
         print()
+        print("Thank you for using student management system!!!!".center(80)) 
         print("="*80)
-        print("Thank you for using student management system!!!!".center(80))    
+        exit()   
