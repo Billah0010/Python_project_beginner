@@ -24,8 +24,9 @@ while True:
     if choice == "1":
         name = input("Enter Student Name: ")
         id = input("Enter Student ID: ")
-        age = input("Enter Age: ")
-        cgpa = input("Enter CGPA: ")
+        age = int(input("Enter Age: "))
+        cgpa = float(input("Enter CGPA: "))
+
         storedStudent_name = name 
         storedStudent_id = id 
         storedStudent_age = age
@@ -71,8 +72,8 @@ while True:
         if search == storedStudent_id :
             storedStudent_name = input("Enter New Name: ")
             storedStudent_id = input("Enter New ID: ")
-            storedStudent_age = input("Enter New Age: ")
-            storedStudent_cgpa = input("Enter New cgpa: ")
+            storedStudent_age = int(input("Enter New Age: "))
+            storedStudent_cgpa = float(input("Enter New cgpa: "))
 
             print()
             print("Inforation Update Successfull!!!!")
