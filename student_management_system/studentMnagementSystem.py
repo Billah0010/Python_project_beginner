@@ -39,7 +39,7 @@ while True:
             print("No Student Found!!!!!!!")
         else:    
             print("="*80)
-            print("Student Information".center(80))
+            print("Student Information")
             print()
             print("Name: ",storedStudent_name)
             print("ID: ",storedStudent_id)
